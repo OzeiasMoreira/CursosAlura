@@ -8,22 +8,44 @@
 <body>
     <script>
 
+        function pulaLinha() {
+
+            document.write("<br>");
+        }
+
         var ano = 2023;
 
         document.write("Ozeias tem " + (ano - 19) );
-        document.write("<br>");
+        pulaLinha();
         document.write("Kauan nasceu em " + (ano - 20) );
-        document.write("<br>");
+        pulaLinha();
         document.write("Patricia nasceu em " + (ano - 46) );
 
-        document.write("<br>");
-        document.write("<br>");
+        pulaLinha();
+        pulaLinha();
 
         document.write("Ozeias tem " + (ano - 2004)  + " anos" );
-        document.write("<br>");
+        pulaLinha();
         document.write("Kauan tem " + (ano - 2003)  + " anos" );
-        document.write("<br>");
+        pulaLinha();
         document.write("Patricia tem " + (ano - 1977)+ " anos" );
+
+        pulaLinha();pulaLinha();
+
+        var idadeOzeias = 19;
+        var idadeKauan = 20;
+        var idadePatricia = 46;
+        var media = (idadeOzeias + idadeKauan + idadePatricia) / 3;
+
+        document.write("A medias das idades é " + (media));
+        pulaLinha();
+        document.write("A medias das idades é " + Math.round(media));
+        pulaLinha();
+
+        var nome = 'Ana Clara';
+        var idadeAnaClara = 16;
+
+        document.write("A idade de " + nome + ' é ' + idadeAnaClara + ' anos ');
          
     </script>
 </body>
